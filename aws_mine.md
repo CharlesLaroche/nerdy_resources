@@ -19,4 +19,4 @@ Now for logging:
 - Copying from s3 to instance: `aws s3 sync s3://io.uizard.play.training-data.eu-central-1/autoencoder/data/v2 ./data`
 - Copying to s3(weights): `aws s3 cp ./my_awesome_weights_v100.h5 s3://io.uizard.play.training-data.eu-central-1/autoencoder/weights/`
 
-![alt text](https://github.com/artuntun/nerdy_resources/blob/master/images/aws_logging.png"Logo Title Text 1")
+![alt text](https://github.com/artuntun/nerdy_resources/blob/master/images/aws_logging.png "Logo Title Text 1")
