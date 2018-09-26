@@ -1,3 +1,16 @@
+Basic instances workflow:
+
+1. Log in AWS and change the region to N.West(Virginia)
+2. Change the role to:
+  - Account: `aws-play-uizard-io`
+  - Function: `Trainer`
+3. Trhow an instance
+4. Log in in the terminal with:
+  - Clear:  `eval $(awszard-clear-role)`
+  - Own credentials: `eval $(awszard-switch-role --profile uizard_v1 --role play_trainer_v1 -t <mfa-key>)`
+5. Connect to the instance: `ssh ec2-user@54.225.6.83`
+
+
 Instructions for setting it up:
 - Download Iannis aws repo: https://github.com/uizard-io/awszard-switch-role
 - Install it as: `python setup.py install`
