@@ -11,8 +11,8 @@ Basic instances workflow:
 5. Connect to the instance: `ssh ec2-user@54.225.6.83`
 6. Copy your own project: 
 7. Copy outputs to s3(within instance): `aws s3 cp weights2 s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/`
-8A. Copy file from s3 locally: `aws s3 cp s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/weights2.py path/locally`
-8B. Copy folder from s3 locally: `aws s3 sync s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/ path/locally`
+8. Copy file from s3 locally: `aws s3 cp s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/weights2.py path/locally`
+9. Copy folder from s3 locally: `aws s3 sync s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/ path/locally`
 
 
 
