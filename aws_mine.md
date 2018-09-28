@@ -9,7 +9,9 @@ Basic instances workflow:
   - Clear:  `eval $(awszard-clear-role)`
   - Own credentials: `eval $(awszard-switch-role --profile uizard_v1 --role play_trainer_v1 -t <mfa-key>)`
 5. Connect to the instance: `ssh ec2-user@54.225.6.83`
-6. Copy your own local project
+6. Copy your own local project: `scp -r src/ ec2-user@52.90.178.152:/home/ec2-user/labs-UI-segmentation`
+
+================== AFTER TRAINING ============
 7. Copy outputs to s3(within instance): `aws s3 cp weights2 s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/`
 8. Copy file from s3 locally: `aws s3 cp s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/weights2.py path/locally`
 9. Copy folder from s3 locally: `aws s3 sync s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/ path/locally`
