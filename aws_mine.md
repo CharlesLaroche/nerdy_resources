@@ -4,7 +4,7 @@ Basic instances workflow:
 2. Change the role to:
   - Account: `aws-play-uizard-io`
   - Function: `Trainer`
-3. Trhow an instance
+3. Trhow an instance: **Deep Learning AMI (Amazon Linux)**
 4. Log in in the terminal with:
   - Clear:  `eval $(awszard-clear-role)`
   - Own credentials: `eval $(awszard-switch-role --profile uizard_v1 --role play_trainer_v1 -t <mfa-key>)`
