@@ -12,6 +12,7 @@ Basic instances workflow:
 6. Copy your own local project: `scp -r src/ ec2-user@52.90.178.152:/home/ec2-user/labs-UI-segmentation`
 
 ================== AFTER TRAINING ============
+
 7. Copy outputs to s3(within instance): `aws s3 cp weights2 s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/`
 8. Copy file from s3 locally: `aws s3 cp s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/weights2.py path/locally`
 9. Copy folder from s3 locally: `aws s3 sync s3://io.uizard.play.training-data.eu-central-1/segmentation-ui/weights/ path/locally`
