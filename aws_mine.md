@@ -10,6 +10,7 @@ Basic instances workflow:
   - Own credentials: `eval $(awszard-switch-role --profile uizard_v1 --role play_trainer_v1 -t <mfa-key>)`
 5. Connect to the instance: `ssh ec2-user@54.225.6.83`
 6. Copy your own local project: `scp -r src/ ec2-user@52.90.178.152:/home/ec2-user/labs-UI-segmentation`
+7. Copy data from s3(within instance): `aws s3 cp s3://io.uizard.play.training-data.eu-central-1/components/sep_18/components.zip ./data/`
 
 ================== AFTER TRAINING ============
 
