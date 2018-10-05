@@ -1,1 +1,1 @@
-- rsunc: `rsync -r --delete-during -avH ~/uizard/labs-UI-segmentation/src/ -e ssh ec2-user@18.205.115.135:/home/ec2-user/labs-UI-segmentation/src/`
+- rsync deleting files: `rsync -r --delete-during -avH ~/uizard/labs-UI-segmentation/src/ -e ssh ec2-user@18.205.115.135:/home/ec2-user/labs-UI-segmentation/src/`
